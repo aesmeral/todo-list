@@ -35,8 +35,6 @@ const Todo = () => {
         })
     }
 
-    console.log(completedItems);
-
     return (
         <Grid container direction="column">
             <Typography variant="h3">

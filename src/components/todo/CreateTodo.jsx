@@ -19,10 +19,13 @@ const CreateTodo = ({ currentList, create }) => {
                 label="New todo list item"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter'  && title !== '' ) createItem();
+                }}
                 />
             </Grid>
             <Grid item>
-                <Button variant="contained" onClick={createItem}>Create Todo Item</Button>
+                <Button variant="contained" disabled={title === ''} onClick={createItem}>Create Todo Item</Button>
             </Grid>
         </Grid>
     )
