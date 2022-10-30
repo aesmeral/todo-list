@@ -12,7 +12,7 @@ const CreateTodo = ({ currentList, create }) => {
     }
 
     return(
-        <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center" sx={{m: 'auto'}}>
+        <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center" sx={{mt: '10px'}}>
             <Grid item>
                 <TextField 
                 sx={{width: '500px'}}
